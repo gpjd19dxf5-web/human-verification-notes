@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    {% if page.series %}<p class="post-series">{{ page.series }}</p>{% endif %}
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      {{ page.date | date: "%Y-%m-%d" }}
+      {% if page.categories %} · {{ page.categories | join: " / " }}{% endif %}
+    </p>
+    {% if page.description %}
+      <p class="post-description">{{ page.description | escape }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <nav class="series-nav" aria-label="系列导航">
+    {% if page.previous_article %}
+      <a href="{{ page.previous_article | relative_url }}">← {{ page.previous_title }}</a>
+    {% else %}<span></span>{% endif %}
+    {% if page.next_article %}
+      <a href="{{ page.next_article | relative_url }}">{{ page.next_title }} →</a>
+    {% endif %}
+  </nav>
+
+  {% include advanced-cta.html %}
+</article>

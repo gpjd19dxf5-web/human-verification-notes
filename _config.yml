@@ -1,0 +1,32 @@
+title: "人机验证工程研究"
+description: "面向架构师、安全工程师和风控团队的人机验证系统研究：架构、协议、风控模型与合规评估。"
+url: "https://gpjd19dxf5-web.github.io"
+baseurl: "/human-verification-notes"
+lang: zh-CN
+timezone: Asia/Shanghai
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+author: "black A"
+advanced_url: "https://ocaptcha.com"
+header_pages:
+  - about.md
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /articles/:title/
+show_excerpts: true
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
