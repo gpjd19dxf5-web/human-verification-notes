@@ -4,7 +4,7 @@ title: 人机验证工程研究
 permalink: /
 ---
 
-> 从系统架构、协议链路到风控决策：写给架构师、安全工程师和平台团队的人机验证研究笔记。
+> 从系统架构、协议链路到边缘风控：写给架构师、安全工程师和爬虫开发者的技术研究笔记。
 
 ## 这个系列解决什么问题
 
@@ -18,7 +18,7 @@ permalink: /
 - 如何评估误接受、误拒绝、延迟和隐私成本；
 - 如何在授权环境中做可复现的安全评估。
 
-## 系列文章
+## 研究文章
 
 <div class="article-grid">
   <a class="article-card" href="{{ '/articles/system-architecture-and-protocol/' | relative_url }}">
@@ -41,6 +41,13 @@ permalink: /
     <p>用授权测试、威胁建模和指标体系替代不可持续的“完整逆向”。</p>
     <span class="article-link">开始阅读 →</span>
   </a>
+
+  <a class="article-card" href="{{ '/articles/cloudflare-5s-challenge/' | relative_url }}">
+    <span class="article-index">04</span>
+    <h2>Cloudflare 5s 盾原理</h2>
+    <p>拆解挑战页、cf_clearance、TLS 指纹与多层风控的真实链路。</p>
+    <span class="article-link">开始阅读 →</span>
+  </a>
 </div>
 
 ## 适合谁阅读
@@ -48,6 +55,7 @@ permalink: /
 - 正在设计登录、注册、支付、营销和内容安全链路的架构师；
 - 需要评估第三方人机验证组件质量的后端与平台工程师；
 - 研究风控模型、误伤率和可观测性的算法工程师；
+- 需要理解 Cloudflare 边缘风控、TLS 指纹与合规访问边界的爬虫开发者；
 - 在授权范围内开展安全评估的红队与安全工程团队。
 
 ## 进阶内容
