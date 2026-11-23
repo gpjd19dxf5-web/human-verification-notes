@@ -2,11 +2,13 @@
 layout: default
 ---
 <article class="post">
+  {% assign char_count = content | strip_html | size %}
+  {% assign reading_minutes = char_count | divided_by: 500 | plus: 1 %}
   <header class="post-header">
     {% if page.series %}<p class="post-series">{{ page.series }}</p>{% endif %}
     <h1 class="post-title">{{ page.title | escape }}</h1>
     <p class="post-meta">
-      {{ page.date | date: "%Y-%m-%d" }}
+      {{ site.author }} · {{ page.date | date: "%Y-%m-%d" }} · 约 {{ reading_minutes }} 分钟
       {% if page.categories %} · {{ page.categories | join: " / " }}{% endif %}
     </p>
     {% if page.description %}

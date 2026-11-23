@@ -172,3 +172,19 @@ a {
     min-height: auto;
   }
 }
+
+
+.advanced-cta-url {
+  margin: 0.8rem 0 0;
+  font-size: 0.88rem;
+  word-break: break-all;
+}
+
+.advanced-cta-url a {
+  color: var(--accent-dark);
+}
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
