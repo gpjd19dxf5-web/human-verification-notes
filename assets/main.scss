@@ -188,3 +188,13 @@ a {
   color: var(--muted);
   font-size: 0.92rem;
 }
+
+
+.post-series a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-series a:hover {
+  text-decoration: underline;
+}

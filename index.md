@@ -18,34 +18,67 @@ permalink: /
 - 如何评估误接受、误拒绝、延迟和隐私成本；
 - 如何在授权环境中做可复现的安全评估。
 
-## 研究文章
+## 理论基座
+
+FunCaptcha 图像挑战与协议工程是本站的公共理论底座：先理解视觉任务如何建模，再理解模型如何工程化，最后把它接入一条可校验的协议链路。
+
+<div class="article-grid">
+  <a class="article-card" href="{{ '/articles/funcaptcha-image-modeling/' | relative_url }}">
+    <span class="article-index">理论 01</span>
+    <h2>问题建模、题型分类与数据工程</h2>
+    <p>从任务边界、题型路由、数据切分到模型设计，建立图像挑战识别的第一层框架。</p>
+    <span class="article-link">开始阅读 →</span>
+  </a>
+
+  <a class="article-card" href="{{ '/articles/funcaptcha-recognition-engineering/' | relative_url }}">
+    <span class="article-index">理论 02</span>
+    <h2>训练、推理与评测</h2>
+    <p>从训练流程、难例增强、置信度校准到推理编排和会话级评测。</p>
+    <span class="article-link">开始阅读 →</span>
+  </a>
+
+  <a class="article-card" href="{{ '/articles/funcaptcha-protocol-state-machine/' | relative_url }}">
+    <span class="article-index">理论 03</span>
+    <h2>状态机、服务端校验与可观测性</h2>
+    <p>把视觉识别接入挑战生命周期、短期凭证、重试语义和可审计链路。</p>
+    <span class="article-link">开始阅读 →</span>
+  </a>
+</div>
+
+[查看理论专题总览]({{ '/series/funcaptcha-theory/' | relative_url }})
+
+## 平台专题：顶象人机验证
 
 <div class="article-grid">
   <a class="article-card" href="{{ '/articles/system-architecture-and-protocol/' | relative_url }}">
-    <span class="article-index">01</span>
+    <span class="article-index">顶象 01</span>
     <h2>系统架构与协议链路拆解</h2>
     <p>拆解客户端、挑战服务、风险决策和业务服务端之间的信任边界。</p>
     <span class="article-link">开始阅读 →</span>
   </a>
 
   <a class="article-card" href="{{ '/articles/risk-ai-and-solution-evaluation/' | relative_url }}">
-    <span class="article-index">02</span>
+    <span class="article-index">顶象 02</span>
     <h2>风控 AI 与方案选型评估</h2>
     <p>理解风险信号、模型校准、漂移监控和方案选型评分卡。</p>
     <span class="article-link">开始阅读 →</span>
   </a>
 
   <a class="article-card" href="{{ '/articles/compliance-security-evaluation/' | relative_url }}">
-    <span class="article-index">03</span>
+    <span class="article-index">顶象 03</span>
     <h2>合规攻防评估实战</h2>
     <p>用授权测试、威胁建模和指标体系替代不可持续的“完整逆向”。</p>
     <span class="article-link">开始阅读 →</span>
   </a>
+</div>
 
+## 边缘风控：Cloudflare 5s 盾
+
+<div class="article-grid">
   <a class="article-card" href="{{ '/articles/cloudflare-5s-challenge/' | relative_url }}">
-    <span class="article-index">04</span>
-    <h2>Cloudflare 5s 盾原理</h2>
-    <p>拆解挑战页、cf_clearance、TLS 指纹与多层风控的真实链路。</p>
+    <span class="article-index">Cloudflare</span>
+    <h2>5s 盾原理：从挑战页到 cf_clearance</h2>
+    <p>拆解挑战页、cf_clearance、TLS 指纹、JA3 与多层风控的真实链路。</p>
     <span class="article-link">开始阅读 →</span>
   </a>
 </div>
