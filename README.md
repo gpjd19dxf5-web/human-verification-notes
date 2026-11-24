@@ -1,88 +1,36 @@
-# 人机验证工程研究 · GitHub Pages
+# 人机验证工程研究
 
-这是一个可直接部署到 GitHub Pages 的 Jekyll 站点骨架。公开文章只保留原理、架构、评估框架和思路，不包含核心实现、私有协议或绕过工具。
+> 面向架构师、安全工程师和爬虫开发者的技术博客：人机验证、边缘风控、协议链路、cf_clearance 与安全评估。
 
-## 目录
+## 在线站点
 
-```text
-.
-├── _config.yml
-├── index.md
-├── about.md
-├── 404.md
-├── robots.txt
-├── _layouts/
-│   └── article.html
-├── _includes/
-│   └── advanced-cta.html
-├── assets/
-│   └── main.scss
-└── articles/
-    ├── 01-system-architecture-and-protocol.md
-    ├── 02-risk-ai-and-solution-evaluation.md
-    └── 03-compliance-security-evaluation.md
-```
+[打开 GitHub Pages 技术博客](https://gpjd19dxf5-web.github.io/human-verification-notes/)
 
-## 发布前替换
+## 文章列表
 
-打开 `_config.yml`，替换：
+1. [顶象人机验证系统架构与协议链路拆解](https://gpjd19dxf5-web.github.io/human-verification-notes/articles/system-architecture-and-protocol/)  
+   系统分层、前端信任边界、挑战生命周期和服务端裁决。
 
-```yaml
-url: "https://gpjd19dxf5-web.github.io"
-baseurl: "/human-verification-notes"
-author: "black A"
-advanced_url: "https://ocaptcha.com"
-```
+2. [顶象人机验证风控 AI 与方案选型评估](https://gpjd19dxf5-web.github.io/human-verification-notes/articles/risk-ai-and-solution-evaluation/)  
+   风险信号、模型校准、漂移监控、方案对比和选型评分卡。
 
-打开 `about.md`，替换作者和独立站链接。
+3. [顶象人机验证合规攻防评估实战](https://gpjd19dxf5-web.github.io/human-verification-notes/articles/compliance-security-evaluation/)  
+   授权测试、威胁建模、非破坏性验证、风险防御和指标体系。
 
-## 部署到 GitHub Pages
+4. [Cloudflare 5s 盾原理：从挑战页到 cf_clearance 的风控链路](https://gpjd19dxf5-web.github.io/human-verification-notes/articles/cloudflare-5s-challenge/)  
+   5s 盾、cf_clearance、TLS/HTTP 指纹、JA3、多层风控和循环挑战分析。
 
-1. 新建一个公开仓库，例如 `human-verification-notes`。
-2. 将本目录全部文件上传到仓库根目录。
-3. 进入仓库 `Settings` → `Pages`。
-4. `Build and deployment` 选择 `Deploy from a branch`。
-5. Branch 选择 `main`，目录选择 `/ (root)`。
-6. 保存后等待 GitHub Actions/Pages 构建完成。
-7. 访问 `https://gpjd19dxf5-web.github.io/human-verification-notes/`。
+## 内容边界
 
-## 本地预览
+本站公开内容以原理、架构、评估方法和工程框架为主，不发布第三方产品的未公开实现细节、私有协议、凭证伪造方法、完整核心算法或绕过脚本。相关研究与工具仅适用于自有系统、官方沙箱和书面授权环境。
 
-如果本机有 Ruby 和 Bundler：
+## 仓库说明
 
-```bash
-bundle install
-bundle exec jekyll serve
-```
+- `index.md`：GitHub Pages 首页
+- `articles/`：公开文章 Markdown 源文件
+- `资产/images/`：文章配图
+- `DEPLOY.md`：GitHub Pages 部署与维护说明
 
-然后访问终端提示的本地地址。
+## 独立站
 
-## 内容策略
-
-公开仓库只放：
-
-- 系统架构；
-- 抽象协议状态机；
-- 风控模型概念；
-- 评估方法和指标；
-- 风险与防御清单；
-- 独立站进阶入口。
-
-不要把以下内容提交到公开仓库：
-
-- 第三方产品未公开的接口、参数和加密实现；
-- 可工作的绕过、伪造、重放或批量攻击脚本；
-- 真实 token、Cookie、密钥、用户数据；
-- 完整核心算法、模型权重和私有数据；
-- 未授权的测试记录。
-
-GitHub Pages 是静态公开站点。任何被提交到仓库根目录或文章目录的文件，即使没有站内链接，也可能被直接访问、被搜索引擎发现，或从 Git 历史中恢复。真正的进阶内容应放在独立站或私有仓库，不要只靠“不放出链接”来保护。
-
-## SEO 建议
-
-- 每篇文章使用独立、描述性的英文 URL；
-- 保留独立标题和 `description`；
-- 通过首页和三篇文章互相内链；
-- 部署后在 Google Search Console 和 Bing Webmaster Tools 提交 `sitemap.xml`；
-- 保持 `robots.txt` 允许抓取；
-- 不要在页面中堆砌关键词，围绕“人机验证架构、挑战协议、风控模型、合规评估”持续写有实质内容的长文。
+[访问 ocaptcha.com](https://ocaptcha.com)

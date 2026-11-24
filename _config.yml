@@ -26,6 +26,7 @@ show_excerpts: true
 
 exclude:
   - README.md
+  - DEPLOY.md
   - Gemfile
   - Gemfile.lock
   - vendor
